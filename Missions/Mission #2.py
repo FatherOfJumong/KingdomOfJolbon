@@ -8,6 +8,8 @@ def min_coin_change(amount):
             amount-=cent       #greater than the cent itself, so we can determine the minimum
             c+=1
     return c
+#Uncomment and pass in some value
+#print(min_coin_change())
 
 
 

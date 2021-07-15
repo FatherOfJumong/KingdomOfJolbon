@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1 class="the_joke" style="color: white;"> {{the_joke}} </h1>
+<form method="POST" action="{{url_for('read_random_joke')}}">
+    <select class="box" name="chosen-categ" id="category">
+            {% for categ in the_categories %}
+        <option>{{ categ }}</option>
+            {% endfor %}
+
+    </select>
+<button class="generate-button" type="submit">Generate</button>
+</form>
+<div class = 'prology'>
+    <h1 class = 'bottom-text'  style="font-size:x-large;">Feeling sad? hear some facts and jokes about Chuck Norris!</h1>
+  </div>
+<a class="show-json" href="{{url_for('show_jokes')}}">See Json</a>
+{% endblock %}
+

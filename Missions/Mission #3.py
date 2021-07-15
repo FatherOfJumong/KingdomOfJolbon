@@ -3,7 +3,7 @@ def is_valid_par(s):
     d = {")": "("}   #using hashmap to check through the string
     for char in s:
         if char in d: #It checks if c is the closing parentheses
-            if stack and stack[-1] == d[char]: #First, it checks if stack is not empty, since we cannot add closing patenthases to an empty list,then it
+            if stack and stack[-1] == d[char]: #First, it checks if stack is not empty, since we cannot add closing patenthases to an empty list,then 
                                             #it checks if the last added item is the opening parentheses.
                 stack.pop()
             else:

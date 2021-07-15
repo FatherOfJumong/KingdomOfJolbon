@@ -6,5 +6,5 @@ def climb_stairs(n):
         p2 = temp
     return p1
 
-#Uncomment and pass in the number of stairs
+#Uncomment and pass in some number of stairs
 #print(climb_stairs())

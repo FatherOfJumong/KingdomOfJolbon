@@ -3,7 +3,7 @@ CREATE TABLE Teacher (
     t_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    gender Bit,
+    gender Bit NOT NULL,
     subject VARCHAR(30)
 
 );
@@ -12,7 +12,7 @@ CREATE TABLE Pupil(
     p_id = INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    gender Bit,
+    gender Bit NOT NULL,
     class VARCHAR(25)
 );
 

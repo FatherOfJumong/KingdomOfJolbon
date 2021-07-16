@@ -18,7 +18,7 @@ CREATE TABLE Pupil(
 
 
 #თუ გვინდა, რომ არსებული ორი table დავაკავშიროთ, ამისთვის
-#გვჭირდება მესამე table, რომელსაც იქნება დაკავშირებული წინა ორ table-თან აიდებით შემდეგნაირად
+#გვჭირდება მესამე table, რომელიც იქნება დაკავშირებული წინა ორ table-თან აიდებით შემდეგნაირად:
 
 CREATE TABLE TeacherToPupil(
     pupil_id INT NOT NULL FOREIGN KEY REFERENCES Pupil(p_id),

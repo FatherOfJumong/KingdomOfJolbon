@@ -1,10 +1,10 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, jsonify, json, make_response
 from api import generate_joke, give_categories
 import random
 import json
+
+
 app = Flask(__name__)
-
-
 @app.route('/')
 @app.route('/home')
 def home_page():
@@ -53,12 +53,12 @@ def show_jokes():
         d.setdefault(key,[])
         for i in content:
             d[key].append(i)
-        my_json = json.dumps(d,indent=4)
+        
+        
 
 
 
-    return render_template('viewjokes.html',the_jokes = my_json)
-
+    return make_response(jsonify(d),200)
 
 
 
